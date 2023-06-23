@@ -18,7 +18,7 @@ eng_dict = {1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R'],
             8: ['J', 'X'],
             10: ['Q', 'Z']}
 
-k = input().upper()
+k = input()
 
 def score_counter(lang_dict, word):
     total_score = 0
@@ -29,5 +29,5 @@ def score_counter(lang_dict, word):
     return total_score
 
 if ord(k[0]) > 122:
-    print(score_counter(rus_dict, k))
-else: print(score_counter(eng_dict, k)) 
+    print(score_counter(rus_dict, k.upper()))
+else: print(score_counter(eng_dict, k.upper())) 
